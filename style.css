@@ -129,6 +129,20 @@ html, body{
     letter-spacing: 2px;
 }
 
+/* Starting state (hidden before scrolling into view) */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Final state (once visible) */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 h1{
     font-size: var(--fs-36);
 }
@@ -256,7 +270,7 @@ nav ul li a:hover{
         text-align: center;
         flex-direction: column;
         display: none;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     nav ul {
@@ -265,7 +279,7 @@ nav ul li a:hover{
         margin: 1rem 0;
     }
 
-    .navbar button{
+    .navbar button {
         display: none;
     }
 
@@ -278,11 +292,13 @@ nav ul li a:hover{
     .hamburger.active span:nth-child(1) {
         transform: rotate(45deg) translate(10px, 5px);
         width: 30px;
-        background:red;
+        background: red;
     }
+
     .hamburger.active span:nth-child(2) {
         opacity: 0;
     }
+
     .hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(10px, -5px);
         width: 30px;
@@ -294,10 +310,8 @@ nav ul li a:hover{
         flex-direction: column;
         gap: 15px;
     }
+
 }
-/*----------------------------------------------------------------------*/
-
-
 
 
 
