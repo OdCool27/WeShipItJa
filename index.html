@@ -169,21 +169,21 @@
             <div class="container">
                 <h2>Contact Us</h2>
                 <div class="contactMethods">
-                    <form action="https://formspree.io/f/mrbyoepb" method="POST" onSubmit="">
+                    <form id="contactForm" action="https://formspree.io/f/mrbyoepb" method="POST" onSubmit="">
                         <h3>Send Us A Message</h3>
 
                         <div class="formGroup">
                             <label>Name</label>
-                            <input name="name" type="text" placeholder="John Brown" required></input>
+                            <input id="name" name="name" type="text" placeholder="John Brown" required></input>
 
                         </div>
                         <div class="formGroup">
                             <label>Email</label>
-                            <input name="email" type="email" placeholder="johnbrown@example.com" required/>
+                            <input id="email" name="email" type="email" placeholder="johnbrown@example.com" required/>
                         </div>
                         <div class="formGroup">
                             <label>Telephone</label>
-                            <input name="telephone" type="tel" placeholder="8765555555" required/>
+                            <input id="telephone" name="telephone" type="tel" placeholder="8765555555" required/>
                         </div>
 
                         <div class="formGroup">
@@ -213,7 +213,7 @@
 
                         <div class="commentSection">
                             <label id="comment">Comment:</label>
-                            <textarea name="comment" rows="15" cols="40" placeholder="Type your message here..."></textarea>
+                            <textarea id="message" name="comment" rows="15" cols="40" placeholder="Type your message here..."></textarea>
                         </div>
 
                         <div class="formButton">
